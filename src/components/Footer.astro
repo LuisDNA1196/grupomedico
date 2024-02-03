@@ -1,0 +1,52 @@
+---
+import Facebook from '../components/icons/Facebook.astro'
+import Instagram from '../components/icons/Instagram.astro'
+---
+
+<footer transition:animate="none" class="bg-white dark:bg-gray-900">
+    <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+        <div class="md:flex md:justify-between">
+          <div class="mb-6 md:mb-0">
+            <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <img src="../../public/assets/logo.webp" class="size-14" alt="GrupoOncologicoLosAngeles">
+                <span class="self-center font-semibold whitespace-nowrap dark:text-white text-xs md:text-base lg:text-xl xl:text-2xl">Centro Integral Oncológico Los Angeles</span>
+              </a>
+          </div>
+          <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+              <div>
+                  <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Direccion</h2>
+                  <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                      <li class="mb-4">
+                          <a href="https://g.co/kgs/wYLCcvY" target="_blank" class="hover:underline">Guadalajara Jalisco <br>C. Los Angeles 86</a>
+                      </li>
+                  </ul>
+              </div>
+              <div>
+                  <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Agenda tu cita</h2>
+                  <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                      <li class="mb-4">
+                          <a href="tel:3336194810" class="hover:underline ">33 3619 4810</a>
+                      </li>
+                  </ul>
+              </div>
+             
+          </div>
+      </div>
+      <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+      <div class="sm:flex sm:items-center sm:justify-between">
+          <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="https://g.co/kgs/wYLCcvY" class="hover:underline">Centro Integral Oncologico Los Angeles</a>. Todos los derechos reservados
+          </span>
+          <div class="flex mt-4 sm:justify-center sm:mt-0">
+              <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                  <Facebook/>
+                  <span class="sr-only">Facebook page</span>
+              </a>
+              <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+                  <Instagram/>
+                  <span class="sr-only">Instagram page</span>
+              </a>
+              
+          </div>
+      </div>
+    </div>
+</footer>

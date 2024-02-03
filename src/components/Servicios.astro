@@ -1,0 +1,112 @@
+---
+import OncologiaIcon from '../components/icons/Oncologia.astro'
+import Dermatologia from '../components/icons/Dermatologia.astro'
+import RadioIcon from '../components/icons/Radio.astro'
+import Laboratorio from '../components/icons/Laboratorio.astro'
+import Cirugia from '../components/icons/Cirugia.astro'
+import OncoCirugia from '../components/icons/OncoCirugia.astro'
+import Estetos from '../components/icons/Estetos.astro'
+import Health from '../components/icons/Health.astro'
+import SectionContainer from './SectionContainer.astro'
+
+const ICONS = {
+    SERVICE1:{
+        name: 'Oncologia',
+        class: "bg-black text-white",
+        icon: OncologiaIcon,
+    },
+    SERVICE2:{
+        name: 'Oncologia',
+        class: "bg-black text-white",
+        icon: Dermatologia,
+    },
+    SERVICE3:{
+        name: 'Radio',
+        class: "bg-black text-white",
+        icon: RadioIcon,
+    },
+    SERVICE4:{
+        name: 'Radio',
+        class: "bg-black text-white",
+        icon: Laboratorio,
+    },
+    SERVICE5:{
+        name: 'Cirugia Ambulatoria',
+        class: "bg-black text-white",
+        icon: Cirugia,
+    },
+    SERVICE6:{
+        name: 'Cirugia Oncologica',
+        class: "bg-black text-white",
+        icon: OncoCirugia,
+    },
+    SERVICE7:{
+        name: 'Cirugia Oncologica',
+        class: "bg-black text-white",
+        icon: Estetos,
+    },
+    SERVICE8:{
+        name: 'Quimioterapia',
+        class: "bg-black text-white",
+        icon: Health,
+    },
+}
+const SERVICES = [
+  {
+    title: 'Oncologia',
+    description: 'Consulta oncologica',
+    icons: [ICONS.SERVICE1],
+  },
+  {
+    title: 'Dermatologia',
+    description: 'Consulta Dermatologica Especializada',
+    icons: [ICONS.SERVICE2],
+  },
+  {
+    title: 'RadioTerapia',
+    description: 'La radioterapia es una forma de tratamiento basada en el empleo de radiaciones ionizantes',
+    icons: [ICONS.SERVICE3],
+  },
+  {
+    title: 'Laboratorio',
+    description: 'Laboratorio especializado',
+    icons: [ICONS.SERVICE4],
+  },
+  {
+    title: 'Cirugia Ambulatoria',
+    description: 'Cirugia Ambulatoria',
+    icons: [ICONS.SERVICE5],
+  },
+  {
+    title: 'Cirugia Oncologica',
+    description: 'Cirugia Oncologica',
+    icons: [ICONS.SERVICE6],
+  },
+  {
+    title: 'Cirugia Laparoscopica',
+    description: 'Cirugia Laparoscopica',
+    icons: [ICONS.SERVICE7],
+  },
+  {
+    title: 'Quimioterapia',
+    description: 'Quimioterapia',
+    icons: [ICONS.SERVICE8],
+  },
+];
+---
+<SectionContainer class="bg-white p-20">
+  <h1 class="text-center text-4xl font-bold mt-4 mb-2">Servicios</h1>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:max-w-4xl mx-auto gap-4 mt-6 ">
+  {
+    SERVICES.map(({ title, description, icons }) => (
+      <div class="flex flex-col items-center p-6 bg-white border border-gray-200 rounded-lg shadow-md hover:bg-blue-200 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 transition duration-300 text-center mb-8 md:mb-0">
+        {icons.map((icon) => (
+          <icon.icon key={icon.name} />
+        ))}
+        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{title}</h5>
+        <p class="font-normal text-gray-700 dark:text-gray-400">{description}</p>
+      </div>
+    ))
+  }
+</div>
+</SectionContainer>

@@ -1,0 +1,33 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro'
+import Hero from '../components/Hero.astro'
+import GetCare from '../components/GetCare.astro'
+import Servicios from '../components/Servicios.astro'
+import Especialistas from '../components/Especialistas.astro';
+import Contacto from '../components/Contacto.astro';
+import AboutUs from '../components/About-us.astro';
+import SectionContainer from '../components/SectionContainer.astro';
+---
+
+<Layout title="Grupo Oncologico Los Angeles" description='Grupo Oncologico Los Angeles'>
+	<main>
+		<SectionContainer id='inicio'>
+			<Hero/>
+		</SectionContainer>
+		<SectionContainer id='servicios'>
+			<Servicios  />
+		</SectionContainer>
+		<SectionContainer id="especialistas">
+			<Especialistas />
+		</SectionContainer>
+		<SectionContainer id="contactanos">
+			<Contacto />
+		</SectionContainer>
+		<SectionContainer id="nosotros">
+			<AboutUs/>
+		</SectionContainer>
+	</main>
+</Layout>
+
+

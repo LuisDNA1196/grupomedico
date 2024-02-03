@@ -1,0 +1,51 @@
+---
+import Flechader from "../components/icons/flechader.astro";
+import Flechaizq from "../components/icons/flechaizq.astro";
+import Layout from "../layouts/Layout.astro";
+
+
+---
+<Layout title="instalaciones" description="instalaciones">
+    <div class="container mx-auto p-4">
+        <div class="overflow-hidden relative">
+          <div class="flex transition-transform ease-in-out duration-500 transform" id="carousel">
+            <div class="w-full flex-shrink-0 carousel-slide">
+              <img src="https://cancercentertec100.com/wp-content/uploads/2020/11/1-NOSOTROS2-1-CC.jpg" alt="Slide 1" class="w-full h-full">
+              <div class="bg-black/60 text-white  text-center p-2 absolute bottom-0 w-full opacity-75">
+                Salas de quimioterapia de ultima generacion
+              </div>
+            </div>
+            <div class="w-full flex-shrink-0 carousel-slide">
+              <img src="https://i0.wp.com/imgs.hipertextual.com/wp-content/uploads/2019/02/hipertextual-diseno-oncologia-2019488463.jpeg?fit=1805%2C1206&quality=50&strip=all&ssl=1" alt="Slide 2" class="w-full h-auto">
+              <div class="bg-black/60 text-white p-2 absolute bottom-0 w-full opacity-75">
+                Alta comodidad
+              </div>
+            </div>
+            <div class="w-full flex-shrink-0 carousel-slide">
+              <img src="https://lacronicadesalamanca.com/wp-content/uploads/2017/05/cancer-sala-dia-hospital-quimioterapia-3.jpg" alt="Slide 3" class="w-full h-auto">
+              <div class="bg-black/60 text-white p-2 absolute bottom-0 w-full opacity-75">
+                Atencion personalizada
+              </div>
+            </div>
+            <div class="w-full flex-shrink-0 carousel-slide">
+              <img src="https://www.crbgroup.com/wp-content/uploads/2020/04/Lab-Site-Selection-2.jpg" alt="Slide 3" class="w-full h-full">
+              <div class="bg-black/60 text-white p-2 absolute bottom-0 w-full opacity-75">
+                DLaboratorio de alta especialidad
+              </div>
+            </div>
+            <!-- Agrega más slides según sea necesario -->
+          </div>
+          <div class="absolute top-1/2 -translate-y-1/2 flex justify-between w-full px-4">
+            <button class="text-white bg-black/15 px-2 py-1 rounded" id="prevButton" onclick="prevSlide()"><Flechaizq/></button>
+            <button class="text-white bg-black/15 px-2 py-1 rounded" id="nextButton" onclick="nextSlide()"><Flechader/></button>
+          </div>
+        </div>
+      </div>
+      <script src="../components/js/ins.js">
+
+
+      </script>
+      
+      
+  </Layout>
+

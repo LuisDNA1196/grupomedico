@@ -1,0 +1,20 @@
+---
+import Agendar from "./Agendar.astro";
+import GetCare from "./GetCare.astro";
+import SectionContainer from "./SectionContainer.astro";
+
+
+---
+
+<SectionContainer class="relative">
+    <div class="absolute inset-0 bg-black/60 p-5 flex flex-col justify-center  text-white">
+        <div class="text-center">
+            <GetCare/>
+        <a href="#contactanos" class="bg-white text-blue-500 px-6 py-2 mt-8 mb-5 rounded-full hover:bg-blue-500 hover:text-white transition duration-300">Contactanos</a>
+        </div>
+    </div>
+    <img src="../../public/assets/herobanner.webp" alt="Hero Banner" class="w-full h-[650px] object-cover rounded-lg shadow-lg">
+</SectionContainer>
+
+
+

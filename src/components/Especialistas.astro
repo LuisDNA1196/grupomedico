@@ -1,0 +1,55 @@
+---
+import SectionContainer from "./SectionContainer.astro"
+
+
+const ESPECIALISTAS = [
+    {
+        name:'Dr. Emanuel Navarro Paredes',
+        title:'Cirujano Oncologo',
+        description:'Cirujano Oncólogo egresado del Hospital Civil de Guadalajara y subespecializado en la Bayerische Julius-Maximus Universität en Würzburg, Alemania en Oncología Gastrointestinal y Microcirugía Reconstructiva. 2002-2007 Profesor titular de las cátedras de Histología y Clínicas de Oncología en la Facultad de Medicina de la Universidad Guadalajara Lamar. 2002-2007 Cursos de actualización médica de 4 semanas de duración en la Chirurgische Universitätsklinik Würzburg.',
+        img:'/assets/especialistas/especialista1.webp'
+    },
+    {
+        name:'Dra. Gabriele María Bárbara Schulz',
+        title:'Dermatologa',
+        description:'Dermatóloga egresada del Instituto Dermatológico de Jalisco “Dr. José Barba Rubio” en Guadalajara, Jalisco, México. Realiza sus estudios de medicina y doctorado (2002) en Bayerische Julius-Maximus Universität en Würzburg, Bavaria, Alemania. Cursa un año de Medicina Interna en el Hospital Distrital de Tauberbischofsheim, Baden-Württemberg, Alemania y medio año en el Hospital Civil “Dr. Juan I. Menchaca” en Guadalajara, Jalisco, México. Cuenta con rotaciones dermatológicas en Kuala Terengganu, Malasya, Zürich, Suiza y Würzburg, Alemania. Certificada por el Consejo Mexicano de Dermatología.',
+        img:'/assets/especialistas/especialista2.webp'
+    },
+    {
+        name:'Dr. Oscar Eduardo Meza Ortiz',
+        title:'Medicina Paliativa y del dolor',
+        description:'Médico Anestesiólogo egresado de la Universidad de Guadalajara Certificación por el Consejo Nacional de Certificación en Anestesiología, A.C. Especialidad en Medicina Paliativa y del Dolor, egresado de la Universidad de Guadalajara',
+        img:'/assets/especialistas/especialistadesc.webp'
+    },
+]
+
+---
+
+
+<SectionContainer class='p-20'>
+    <h1 class="text-center text-4xl font-bold mt-4 mb-4">Especialistas</h1>
+
+    <div class="text-center grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+        {
+          ESPECIALISTAS.map(({ name, description, img, title }, index) => (
+            <div class="w-full max-w-sm m-4 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+              <div class="flex flex-col items-center p-4">
+                <img class="mb-4 rounded-full size-36 md:size-48 lg:size-56 xl:size-64 mt-4" src={img} alt={name} {title}>
+                <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white">{name}</h5>
+                <span class="text-sm text-gray-500 dark:text-gray-400">{title}</span>
+                <span class="m-4 text-left text-md text-gray-900 dark:text-gray-400">{description}</span>
+              </div>
+            </div>
+          ))
+        }
+        <div class="w-full max-w-sm m-4 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex items-center justify-center">
+    <a href="/especialistaspage" class="text-sm sm:text-2zxl md:text-lg lg:text-xl xl:text-2xl p-6 sm:p-8 text-center text-blue-500 hover:bg-blue-100 hover:text-white transition duration-300">
+        Ver más
+    </a>
+</div>
+
+
+
+      </div>
+    
+</SectionContainer>

@@ -1,0 +1,43 @@
+---
+import Agendar from "./Agendar.astro";
+import SectionContainer from "./SectionContainer.astro";
+import Facebook from "./icons/Facebook.astro";
+import Instagram from "./icons/Instagram.astro";
+import Phone from "./icons/Phone.astro";
+
+
+---
+
+<SectionContainer class="mt-4  bg-white p-20" >
+    <h1 class="text-center text-4xl font-bold mb-8">Contáctanos</h1>
+    <div class="flex flex-col md:flex-row items-center justify-center">
+    <div class="mb-6 md:mr-6 text-center md:w-1/2 lg:max-w-2xl">
+        <div class="block max-w-sm p-8 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+        <div class="mb-4">
+            <h2 class="mb-2 text-4xl font-bold tracking-tight text-gray-900 dark:text-white">Agenda tu cita</h2>
+            <h2 class="mb-2 text-md font-light tracking-tight text-gray-900 dark:text-white">Centro Integral Oncológico Los Angeles</h2>
+            <h2 class="text-2xl font-normal text-gray-700 dark:text-gray-400">No dejes pasar más tiempo, la prevención es la clave.</h2>
+        </div>
+        <div class="">
+            <Agendar/>
+        </div>
+        <div class="flex justify-evenly mt-2 mb-2">
+                <div class="flex items-center">
+                    <Facebook />
+                    <a href="#" class="ml-2 font-normal hover:underline text-gray-700 dark:text-gray-400">Facebook</a>
+                </div>
+                <div class="flex items-center">
+                    <Instagram />
+                    <a href="#" class="ml-2 font-normal hover:underline text-gray-700 dark:text-gray-400">Instagram</a>
+                </div>
+            </div>
+            <img  src="/assets/love.png" alt="lovepng"/>
+        </div>
+    </div>
+    
+    <div class="md:w-1/2">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3733.150404575619!2d-103.34879258783646!3d20.66345910014286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428b21d24f16c7d%3A0xbf80445e16184adc!2sCentro%20Integral%20Oncol%C3%B3gico%20%22Los%20%C3%81ngeles%22!5e0!3m2!1sen!2smx!4v1706818021827!5m2!1sen!2smx"  width="100%" height="650" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>   
+    </div>
+</div>
+</SectionContainer>
