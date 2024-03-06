@@ -8,6 +8,9 @@ import Especialistas from '../components/Especialistas.astro';
 import Contacto from '../components/Contacto.astro';
 import AboutUs from '../components/About-us.astro';
 import SectionContainer from '../components/SectionContainer.astro';
+import Description from '../components/Description.astro';
+import Testimonios from '../components/Testimonios.astro';
+
 ---
 
 <Layout title="Centro Integral Oncologico Los Angeles" description='Centro Integral Oncologico Los Angeles'>
@@ -15,11 +18,17 @@ import SectionContainer from '../components/SectionContainer.astro';
 		<SectionContainer id='inicio'>
 			<Hero/>
 		</SectionContainer>
+		<SectionContainer>
+			<Description/>
+		</SectionContainer>
 		<SectionContainer id='servicios'>
 			<Servicios  />
 		</SectionContainer>
 		<SectionContainer id="especialistas">
 			<Especialistas />
+		</SectionContainer>
+		<SectionContainer>
+			<Testimonios/>
 		</SectionContainer>
 		<SectionContainer id="contactanos">
 			<Contacto />

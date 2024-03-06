@@ -57,11 +57,11 @@ const SERVICES = [
     description: 'Consulta oncologica',
     icons: [ICONS.SERVICE1],
   },
-  {
-    title: 'Dermatologia',
-    description: 'Consulta Dermatologica Especializada',
-    icons: [ICONS.SERVICE2],
-  },
+  // {
+  //   title: 'Dermatologia',
+  //   description: 'Consulta Dermatologica Especializada',
+  //   icons: [ICONS.SERVICE2],
+  // },
  
   {
     title: 'Cirugia Ambulatoria',
@@ -85,12 +85,12 @@ const SERVICES = [
   },
 ];
 ---
-<SectionContainer class="bg-white p-20">
+<SectionContainer class="bg-white p-8">
   <h1 class="text-center text-4xl font-bold mt-4 mb-2">Servicios</h1>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:max-w-4xl mx-auto gap-4 mt-6 ">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:max-w-4xl mx-auto gap-4 mt-6 pb-6 ">
   {
     SERVICES.map(({ title, description, icons }) => (
-      <div class="flex flex-col items-center p-6 bg-white border border-gray-200 rounded-lg shadow-md hover:bg-blue-200 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 transition duration-300 text-center mb-8 md:mb-0">
+      <div class="flex flex-col items-center p-6 bg-white border border-gray-200 rounded-lg shadow-md hover:bg-blue-200 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 transition duration-300 text-center mb-10 md:mb-0">
         {icons.map((icon) => (
           <icon.icon key={icon.name} />
         ))}
