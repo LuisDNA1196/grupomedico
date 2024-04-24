@@ -6,8 +6,8 @@ const ESPECIALISTAS = [
     {
         name:'Dr. Emanuel Navarro Paredes',
         title:'Cirujano Oncologo',
-        description:'Cirujano Oncólogo egresado del Hospital Civil de Guadalajara y subespecializado en la Bayerische Julius-Maximus Universität en Würzburg, Alemania en Oncología Gastrointestinal y Microcirugía Reconstructiva...',
-        img:'/assets/especialistas/especialista1.webp'
+        description:'Cirujano Oncólogo egresado del Hospital Civil de Guadalajara se subespecializó en la Bayerische Julius-Maximilians-Universität en Würzburg, Alemania, en Oncología Gastrointestinal y Microcirugía Reconstructiva, durante el período de 2002-2007, donde colaboró con los grupos más importantes de cirugía colorrectal, gastrointestinal y tiroidea. Ha sido ponente y profesor en',
+        img:'https://res.cloudinary.com/dhv3vam1r/image/upload/c_crop,ar_1:1/v1710420895/GOP/ambsxnhtd5kxcz1dyw8m.webp'
     },
     // {
     //     name:'Dra. Gabriele María Bárbara Schulz',
@@ -21,36 +21,54 @@ const ESPECIALISTAS = [
     //     description:'Médico Anestesiólogo egresado de la Universidad de Guadalajara Certificación por el Consejo Nacional de Certificación en Anestesiología, A.C. Especialidad en Medicina Paliativa y del Dolor, egresado de la Universidad de Guadalajara',
     //     img:'/assets/especialistas/especialistadesc.webp'
     // },
-    {
-        name:'Conoce a todos los especialistas',
-        title:'Centro Integral Oncologico Los Angeles',
-        description:'Contamos con un equipo multidisciplinario para que tengas la mejor atención. ',
-        img:'/assets/especialistas/logoangel.webp'
-    },
+    // {
+    //     name:'Conoce a todos los especialistas',
+    //     title:'Centro Integral Oncologico Los Angeles',
+    //     description:'Contamos con un equipo multidisciplinario para que tengas la mejor atención. ',
+    //     img:'/assets/especialistas/logoangel.webp'
+    // },
 ]
 
 ---
 
 
-<SectionContainer class='lg:p-20'>
-    <h1 class="text-center text-4xl font-bold mt-4 mb-8">Especialistas</h1>
-
-    <div class="grid grid-cols-1 sm:grid-cols-2  md:grid-cols-3  gap-4">
-        {
-          ESPECIALISTAS.map(({ name, description, img, title }, index) => (
-            <div class="  bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-              <a href="/especialistaspage">
-              <div class="flex flex-col items-center p-4 text-center">
-                <img class="mb-4 rounded-full size-36 md:size-48 lg:size-56 xl:size-64 mt-4" src={img} alt={name} {title}>
-                <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white">{name}</h5>
-                <span class="text-sm text-gray-500 dark:text-gray-400">{title}</span>
-                <span class="m-4 text-left text-lg lg:text-xl text-gray-900 dark:text-gray-400">{description}</span>
-              </a>
-                <button class="rounded-lg mt-2 bg-blue-700 text-white py-1 px-3 text-center hover:bg-blue-800">Saber más</button>
-              </div>
+<SectionContainer>
+  <h1 class="text-center text-4xl font-bold mt-4 mb-8">Nuestros Especialistas</h1>
+  
+  <div class="">
+    {
+      ESPECIALISTAS.map(({ name, description, img, title }, index) => (
+        <div class="md:m-8  bg-white border border-gray-200 rounded-lg shadow ">
+          <div class="text-center mt-10">
+            <h5 class=" text-lg lg:text-4xl font-medium text-gray-900 ">{name}</h5>
+            <span class="text-md lg:text-2xl text-gray-500 ">{title}</span>
+          </div>  
+          <div class="flex flex-col lg:flex-row items-center p-4 text-center">
+            <img class="mb-8 rounded-full size-48 md:size-48 lg:size-56 xl:size-80" src={img} alt={name} {title}>
+            <span class="m-6 text-left md:text-lg lg:text-xl xl:text-2xl text-gray-900 ">{description} <a href="./especialistaspage" class="rounded-lg mt-2 italic text-blue-500 py-1 px-3 text-center hover:text-blue-700">...Continuar Leyendo</a></span>
             </div>
-          ))
-        }
-        </div>
+            
+          </div>
+      ))
+    }
+    </div>
       
+      
+      // <div class="grid grid-cols-1 sm:grid-cols-2  md:grid-cols-3  gap-4">
+         {
+      //   ESPECIALISTAS.map(({ name, description, img, title }, index) => (
+      //     <div class="  bg-white border border-gray-200 rounded-lg shadow ">
+      //       <a href="/especialistaspage">
+      //       <div class="flex flex-col items-center p-4 text-center">
+      //         <img class="mb-4 rounded-full size-36 md:size-48 lg:size-56 xl:size-64 mt-4" src={img} alt={name} {title}>
+      //         <h5 class="mb-1 text-xl font-medium text-gray-900 ">{name}</h5>
+      //         <span class="text-sm text-gray-500 ">{title}</span>
+      //         <span class="m-4 text-left text-lg lg:text-xl text-gray-900 ">{description}</span>
+      //       </a>
+      //         <button class="rounded-lg mt-2 bg-blue-700 text-white py-1 px-3 text-center hover:bg-blue-800">Saber más</button>
+      //       </div>
+      //     </div>
+      //   ))
+      // }
+      // </div>
 </SectionContainer>

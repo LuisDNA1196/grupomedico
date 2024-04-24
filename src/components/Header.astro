@@ -11,7 +11,7 @@ const navItems = [
     {
         title:'Inicio',
         lable:'inicio',
-        url:'/#inicio',
+        url:'/',
         icon: Home
     },
     {
@@ -36,7 +36,7 @@ const navItems = [
 
      },
      {
-        title: "Sobre nosotros",
+        title: "Nosotros",
         label: "nosotros",
         url: "/#nosotros",
         icon: About
@@ -52,17 +52,17 @@ const navItems = [
 ]
 ---
 
-<nav transition:animate="none" class=" sticky w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-900">
+<nav transition:animate="none" class=" sticky w-full z-20 top-0 start-0 border-b border-gray-200  bg-white ">
     <div class="w-full flex  items-center justify-between mx-auto p-4 flex-wrap lg:flex-nowrap">
       <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
-        <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpiha0MilvJ5VUO1Snf8-SLpFByE_mpdPSqkMamZO6EyGkZARq8kxU2yaSdSz1ODiVGpckCzG7pLPA2pPHV6QXG-hrSETmKw=s1600" class="h-auto w-44" alt="GrupoOncologicoLosAngeles">
+        <img src="https://res.cloudinary.com/dhv3vam1r/image/upload/v1710422797/GOP/n25e6kdpc1gbwxsn8ck5.webp" class="h-auto w-44" alt="GrupoOncologicoLosAngeles">
       </a>
     <div class="flex lg:order-2 space-x-3  lg:space-x-0 rtl:space-x-reverse">
         <button 
         id="menu-button"
         data-collapse-toggle="navbar-sticky" 
         type="button" 
-        class="inline-flex items-center p-2 size-12 mt-2 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
+        class="inline-flex items-center p-2 size-12 mt-2 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 " aria-controls="navbar-sticky" aria-expanded="false">
           <span class="sr-only">Open main menu</span>
           <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
               <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
@@ -74,13 +74,13 @@ const navItems = [
         class="items-center  justify-between hidden w-full lg:flex lg:w-auto lg:order-1"
         id="navbar-sticky"
       >
-      <ul class="flex flex-col p-4 lg:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse lg:flex-row lg:mt-0 lg:border-0 md:bg-white dark:bg-gray-800 lg:dark:bg-gray-900 dark:border-gray-700">
+      <ul class="flex flex-col p-4 lg:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse lg:flex-row lg:mt-0 lg:border-0 md:bg-white ">
         {
           navItems.map((link, index) => (
             <li class="mb-1 text-md xl:text-xl md:text-lg sm:text-sm lg:text-md">
               <div class="flex items-center text-lg ml-1 text-center h-12">
                 <a
-                  class={`lg:text-xs xl:text-xl m-4 text-gray-900 rounded hover:bg-gray-200 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 `}
+                  class={`lg:text-xs xl:text-xl m-4 text-gray-900 rounded hover:bg-gray-200 md:hover:bg-transparent md:hover:text-blue-700 md:p-0  `}
                   href={link.url}
                 >
                   <div class="flex items-center">
@@ -98,7 +98,7 @@ const navItems = [
       
     </div>
     <div class="text-center items-center text-md bg-gray-100">
-      <span class=" italic">"Más de 100 años de tradición"</span>
+      <span class=" italic">"Más de 50 años de tradición"</span>
     </div>
     
   </nav>

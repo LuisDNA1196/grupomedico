@@ -7,33 +7,10 @@ const ESPECIALISTAS = [
     {
         name:'Dr. Emanuel Navarro Paredes',
         title:'Cirujano Oncologo',
-        description:'Cirujano Oncólogo egresado del Hospital Civil de Guadalajara y subespecializado en la Bayerische Julius-Maximus Universität en Würzburg, Alemania en Oncología Gastrointestinal y Microcirugía Reconstructiva. 2002-2007 Profesor titular de las cátedras de Histología y Clínicas de Oncología en la Facultad de Medicina de la Universidad Guadalajara Lamar. 2002-2007 Cursos de actualización médica de 4 semanas de duración en la Chirurgische Universitätsklinik Würzburg.',
-        img:'/assets/especialistas/especialista1.webp'
+        description:'Cirujano Oncólogo egresado del Hospital Civil de Guadalajara se subespecializó en la Bayerische Julius-Maximilians-Universität en Würzburg, Alemania, en Oncología Gastrointestinal y Microcirugía Reconstructiva, durante el período de 2002-2007, donde colaboró con los grupos más importantes de cirugía colorrectal, gastrointestinal y tiroidea. Ha sido ponente y profesor en múltiples cursos, así como profesor titular de las cátedras de Histología y Clínicas de Oncología en la Facultad de Medicina de la Universidad de Guadalajara Lamar, en el mismo período. Además, ha participado en incontables congresos y actividades relacionadas con la Oncología, así como en cursos de actualización médica de 4 semanas de duración en la Chirurgische Universitätsklinik Würzburg.',
+        img:'https://res.cloudinary.com/dhv3vam1r/image/upload/c_crop,ar_1:1/v1710420895/GOP/ambsxnhtd5kxcz1dyw8m.webp'
     },
-    {
-        name:'Dra. Gabriele María Bárbara Schulz',
-        title:'Dermatologa',
-        description:'Dermatóloga egresada del Instituto Dermatológico de Jalisco “Dr. José Barba Rubio” en Guadalajara, Jalisco, México. Realiza sus estudios de medicina y doctorado (2002) en Bayerische Julius-Maximus Universität en Würzburg, Bavaria, Alemania. Cursa un año de Medicina Interna en el Hospital Distrital de Tauberbischofsheim, Baden-Württemberg, Alemania y medio año en el Hospital Civil “Dr. Juan I. Menchaca” en Guadalajara, Jalisco, México. Cuenta con rotaciones dermatológicas en Kuala Terengganu, Malasya, Zürich, Suiza y Würzburg, Alemania. Certificada por el Consejo Mexicano de Dermatología.',
-        img:'/assets/especialistas/especialista2.webp'
-    },
-    {
-        name:'Dr. Oscar Eduardo Meza Ortiz',
-        title:'Medicina Paliativa y del dolor',
-        description:'Médico Anestesiólogo egresado de la Universidad de Guadalajara Certificación por el Consejo Nacional de Certificación en Anestesiología, A.C. Especialidad en Medicina Paliativa y del Dolor, egresado de la Universidad de Guadalajara',
-        img:'/assets/especialistas/especialistadesc.webp'
-    },
-    {
-        name:'Dr. Oscar Eduardo Meza Ortiz',
-        title:'Medicina Paliativa y del dolor',
-        description:'Médico Anestesiólogo egresado de la Universidad de Guadalajara Certificación por el Consejo Nacional de Certificación en Anestesiología, A.C. Especialidad en Medicina Paliativa y del Dolor, egresado de la Universidad de Guadalajara',
-        img:'/assets/especialistas/especialistadesc.webp'
-    },
-    {
-        name:'Dr. Oscar Eduardo Meza Ortiz',
-        title:'Medicina Paliativa y del dolor',
-        description:'Médico Anestesiólogo egresado de la Universidad de Guadalajara Certificación por el Consejo Nacional de Certificación en Anestesiología, A.C. Especialidad en Medicina Paliativa y del Dolor, egresado de la Universidad de Guadalajara',
-        img:'/assets/especialistas/especialistadesc.webp'
-    },
+   
     {
         name:'Dr. Oscar Eduardo Meza Ortiz',
         title:'Medicina Paliativa y del dolor',
@@ -51,14 +28,14 @@ const ESPECIALISTAS = [
     <div class="">
       {
         ESPECIALISTAS.map(({ name, description, img, title }, index) => (
-          <div class=" mb-4 md:m-8  bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+          <div class=" mb-4 md:m-8  bg-white border border-gray-200 rounded-lg shadow ">
             <div class="text-center mt-10">
-              <h5 class=" m-4 mb-1 text-lg lg:text-4xl font-medium text-gray-900 dark:text-white">{name}</h5>
-              <span class="text-md lg:text-2xl text-gray-500 dark:text-gray-400">{title}</span>
+              <h5 class=" m-4 mb-1 text-lg lg:text-4xl font-medium text-gray-900 ">{name}</h5>
+              <span class="text-md lg:text-2xl text-gray-500 ">{title}</span>
             </div>  
             <div class="flex flex-col lg:flex-row items-center p-4 text-center">
               <img class="mb-4 rounded-full size-48 md:size-48 lg:size-56 xl:size-80 mt-4" src={img} alt={name} {title}>
-              <span class="m-4 text-left md:text-lg lg:text-xl xl:text-2xl text-gray-900 dark:text-gray-400">{description}</span>
+              <span class="m-4 text-left md:text-lg lg:text-xl xl:text-2xl text-gray-900 ">{description}</span>
             </div>
           </div>
         ))
