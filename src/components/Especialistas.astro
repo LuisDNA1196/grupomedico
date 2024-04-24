@@ -33,14 +33,14 @@ const ESPECIALISTAS = [
 
 
 <SectionContainer>
-  <h1 class="text-center text-4xl font-bold mt-4 mb-8">Nuestros Especialistas</h1>
   
   <div class="">
     {
       ESPECIALISTAS.map(({ name, description, img, title }, index) => (
-        <div class="md:m-8  bg-white border border-gray-200 rounded-lg shadow ">
+        <div class="mt-8  bg-white border border-gray-200 rounded-lg shadow ">
+          <h1 class="text-center text-4xl font-bold mt-4 mb-8">Nuestros Especialistas</h1>
           <div class="text-center mt-10">
-            <h5 class=" text-lg lg:text-4xl font-medium text-gray-900 ">{name}</h5>
+            <h5 class=" text-lg lg:text-3xl font-medium text-gray-900 ">{name}</h5>
             <span class="text-md lg:text-2xl text-gray-500 ">{title}</span>
           </div>  
           <div class="flex flex-col lg:flex-row items-center p-4 text-center">
