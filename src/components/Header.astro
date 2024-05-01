@@ -77,10 +77,10 @@ const navItems = [
       <ul class="flex flex-col p-4 lg:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse lg:flex-row lg:mt-0 lg:border-0 md:bg-white ">
         {
           navItems.map((link, index) => (
-            <li class="mb-1 text-md xl:text-xl md:text-lg sm:text-sm lg:text-md">
+            <li class="mb-1 text-md xl:text-xl md:text-lg sm:text-sm lg:text-lg transform hover:scale-105 transition-transform duration-300">
               <div class="flex items-center text-lg ml-1 text-center h-12">
                 <a
-                  class={`lg:text-xs xl:text-xl m-4 text-gray-900 rounded hover:bg-gray-200 md:hover:bg-transparent md:hover:text-blue-700 md:p-0  `}
+                  class={`lg:text-md xl:text-2xl text-md m-2 text-gray-900 rounded hover:bg-gray-200 md:hover:bg-transparent md:hover:text-blue-700 md:p-0  `}
                   href={link.url}
                 >
                   <div class="flex items-center">
